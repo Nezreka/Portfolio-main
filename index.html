@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Broque Thomas - Cartographer of Digital Constellations</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>">
+</head>
+<body>
+    <div id="preloader">
+        <div class="preloader-glyph-container">
+            <svg class="preloader-glyph" viewBox="0 0 100 100">
+                <path d="M50 10 L90 50 L50 90 L10 50 Z M50 30 L70 50 L50 70 L30 50 Z" fill="none" stroke="currentColor" stroke-width="2"/>
+                <circle cx="50" cy="50" r="15" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3 7"/>
+            </svg>
+        </div>
+        <p class="preloader-text" data-text="Calibrating Celestial Harmonics...">Calibrating Celestial Harmonics...</p>
+    </div>
+
+    <div id="three-canvas-container">
+        <!-- Three.js canvas will be appended here by JS -->
+    </div>
+
+    <div id="vignette-overlay"></div> <!-- For subtle darkening of edges -->
+
+    <header id="site-header">
+        <div id="header-content">
+            <h1 id="site-title" data-text="Broque Thomas">Broque Thomas</h1>
+            <p id="site-tagline">Weaver of Interactive Nebulae & Digital Artifacts</p>
+        </div>
+        <button id="enter-codex-button">Unveil the Codex</button> <!-- Removed .hidden, JS will handle initial state -->
+    </header>
+
+    <nav id="celestial-navigation"> <!-- Removed .nav-hidden, JS will handle initial state -->
+        <ul>
+            <li><button class="nav-item" data-section="genesis" aria-label="Navigate to Genesis section"><span class="nav-glyph">🌌</span><span class="nav-text">Genesis</span></button></li>
+            <li><button class="nav-item" data-section="creations" aria-label="Navigate to Creations section"><span class="nav-glyph">🌠</span><span class="nav-text">Creations</span></button></li>
+            <li><button class="nav-item" data-section="apparatus" aria-label="Navigate to Apparatus section"><span class="nav-glyph">🛠️</span><span class="nav-text">Apparatus</span></button></li>
+            <li><button class="nav-item" data-section="commune" aria-label="Navigate to Commune section"><span class="nav-glyph">📡</span><span class="nav-text">Commune</span></button></li>
+        </ul>
+    </nav>
+
+    <main id="content-codex"> <!-- Removed .codex-hidden, JS will handle initial state -->
+        <div id="scroll-indicator">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 5v14M19 12l-7 7-7-7"/>
+            </svg>
+        </div>
+
+        <section id="genesis" class="content-section" aria-labelledby="genesis-title">
+            <div class="section-title-container">
+                <h2 id="genesis-title" class="section-title"><span>G</span>enesis<span>.</span></h2>
+                <div class="title-decoration"></div>
+            </div>
+            <div class="section-content-wrapper">
+                <div class="section-content">
+                    <p class="ephemeral-text">From the silent hum of the void, ideas crystallize. I am Broque Thomas, an artisan of the digital aether, transforming fleeting thoughts into tangible, luminous experiences. My craft is a dance between logic and dream, structure and chaos, seeking the sublime in the syntax.</p>
+                    <p class="ephemeral-text">Each line of code is a brushstroke, each interface a portal. I don't just build websites and apps; I sculpt pocket universes, each with its own laws, its own beauty, its own story waiting to be discovered.</p>
+                    <blockquote class="ephemeral-text">"The cosmos is within us. We are made of star-stuff. We are a way for the universe to know itself." - Carl Sagan (adapted)</blockquote>
+                </div>
+            </div>
+        </section>
+
+        <section id="creations" class="content-section" aria-labelledby="creations-title">
+            <div class="section-title-container">
+                <h2 id="creations-title" class="section-title"><span>C</span>reations<span>.</span></h2>
+                <div class="title-decoration"></div>
+            </div>
+            <div class="section-content-wrapper">
+                <div class="portfolio-grid">
+                    <!-- Portfolio items will be populated here by JS -->
+                </div>
+            </div>
+        </section>
+
+        <section id="apparatus" class="content-section" aria-labelledby="apparatus-title">
+            <div class="section-title-container">
+                <h2 id="apparatus-title" class="section-title"><span>A</span>pparatus<span>.</span></h2>
+                <div class="title-decoration"></div>
+            </div>
+            <div class="section-content-wrapper">
+                <div class="section-content skills-matrix">
+                    <p class="ephemeral-text">The tools of creation are extensions of will, conduits for imagination. These are the languages I speak, the frameworks I wield, the philosophies that guide my hand:</p>
+                    <div class="skill-category">
+                        <h4>Core Constructs (Languages & Markup)</h4>
+                        <ul>
+                            <li><span>HTML5:</span> Architecting semantic & accessible foundations.</li>
+                            <li><span>CSS3/SCSS:</span> Sculpting visual narratives & fluid interfaces.</li>
+                            <li><span>JavaScript (ESNext):</span> Imbuing interactivity & dynamic life.</li>
+                            <li><span>TypeScript:</span> Weaving robust & scalable logic structures.</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Frameworks & Libraries (The Star-Forges)</h4>
+                        <ul>
+                            <li><span>React / Next.js:</span> Crafting reactive constellations & server-rendered universes.</li>
+                            <li><span>Vue / Nuxt.js:</span> Building elegant & progressive astral bodies.</li>
+                            <li><span>Node.js / Express:</span> Powering the server-side nebulae & APIs.</li>
+                            <li><span>Three.js / WebGL:</span> Rendering dimensional vistas & immersive realities.</li>
+                            <li><span>Anime.js / GSAP:</span> Choreographing the dance of pixels & motion.</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Design & Prototyping (The Alchemical Blueprints)</h4>
+                        <ul>
+                            <li><span>Figma / Sketch:</span> Charting user journeys & visual systems.</li>
+                            <li><span>Adobe Creative Suite:</span> Refining assets & multimedia textures.</li>
+                            <li><span>UI/UX Principles:</span> Ensuring intuitive navigation through cosmic complexities.</li>
+                            <li><span>Responsive Design:</span> Crafting experiences that adapt across all viewing lenses.</li>
+                        </ul>
+                    </div>
+                     <div class="skill-category">
+                        <h4>Philosophies (The Guiding Stars)</h4>
+                        <ul>
+                            <li><span>User-Centric Design:</span> The experiencer is the center of the universe.</li>
+                            <li><span>Performance Optimization:</span> Swiftness is elegance.</li>
+                            <li><span>Accessibility (A11Y):</span> Digital realms open to all explorers.</li>
+                            <li><span>Creative Coding:</span> Where art and technology merge into new forms.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="commune" class="content-section" aria-labelledby="commune-title">
+            <div class="section-title-container">
+                <h2 id="commune-title" class="section-title"><span>C</span>ommune<span>.</span></h2>
+                <div class="title-decoration"></div>
+            </div>
+            <div class="section-content-wrapper">
+                <div class="section-content">
+                    <p class="ephemeral-text">The Aether carries whispers, ideas, and invitations. Should our paths align, or if you seek a guide for your own digital expeditions, transmit your signal.</p>
+                    <form id="contact-form">
+                        <div class="form-field">
+                            <input type="text" id="name" name="name" required placeholder=" ">
+                            <label for="name">Your Moniker (Name)</label>
+                            <div class="field-focus-line"></div>
+                        </div>
+                        <div class="form-field">
+                            <input type="email" id="email" name="email" required placeholder=" ">
+                            <label for="email">Your Signal Relay (Email)</label>
+                            <div class="field-focus-line"></div>
+                        </div>
+                        <div class="form-field">
+                            <textarea id="message" name="message" rows="6" required placeholder=" "></textarea>
+                            <label for="message">Your Celestial Message</label>
+                            <div class="field-focus-line"></div>
+                        </div>
+                        <button type="submit" class="cta-button transmit-button">
+                            <span class="button-text">Transmit to the Void</span>
+                            <span class="button-glyph">→</span>
+                        </button>
+                    </form>
+                    <div class="social-constellation">
+                        <p class="ephemeral-text">Or find my echoes in these digital realms:</p>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Broque Thomas on GitHub">
+                            <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.5 2.32 1.07 2.87.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21.5c0 .27.16.58.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Broque Thomas on LinkedIn">
+                            <svg viewBox="0 0 24 24"><path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-3.06v8.31h3.06v-4.6c0-1.21.79-2.06 2.06-2.06c1.27 0 2.06.85 2.06 2.06v4.6H18.5M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.31H5.5v8.31h2.77Z"/></svg>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Broque Thomas on Codepen">
+                           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M15.87 8.42L12.53 1.75L12 1.07L11.47 1.75L8.13 8.42L6.5 10.96L6.5 13.05L8.13 15.58L11.47 22.25L12 22.93L12.53 22.25L15.87 15.58L17.5 13.05L17.5 10.96L15.87 8.42M12 5.53L13.68 8.42L12 10.3L10.32 8.42L12 5.53M9.66 9.94L12 11.81L14.34 9.94L15.5 11.5L12 14.2L8.5 11.5L9.66 9.94M12 18.47L10.32 15.58L12 13.7L13.68 15.58L12 18.47Z"/></svg>
+                            <span>Codepen</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="project-modal" class="modal-hidden" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button id="modal-close-button" aria-label="Close project details">
+            <svg viewBox="0 0 24 24"><path fill="currentColor" d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"/></svg>
+        </button>        
+        <div id="modal-content-wrapper">
+            <h3 id="modal-title"></h3>
+            <div id="modal-body">
+                <!-- Project details will be injected here -->
+            </div>
+        </div>
+    </div>
+
+    <div id="cursor-aura"></div>
+    <div id="cursor-dot"></div>
+
+    <!-- Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
